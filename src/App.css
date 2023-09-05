@@ -1,0 +1,54 @@
+/* Estilo para el artículo principal */
+article {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+  }
+  
+  /* Estilo para los encabezados */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para la descripción del tiempo */
+  h3 {
+    font-size: 18px;
+  }
+  
+  /* Estilo para la lista de detalles del clima */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  /* Estilo para el botón de cambio de temperatura */
+  button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Imagen del clima */
+  img {
+    max-width: 100px;
+    height: auto;
+  }
