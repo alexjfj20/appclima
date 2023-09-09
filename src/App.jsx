@@ -9,6 +9,7 @@ function App() {
  const [coords, setCoords] = useState()
  const [weather, setWeather] = useState()
  const [temp, setTemp] = useState()
+ const [error,setError] = useState(null) // Agregamos un estado para manejar errores
 
 
  useEffect (() => {
@@ -23,7 +24,18 @@ function App() {
     }
       setCoords(obj)
   }
-  navigator.geolocation.getCurrentPosition(sucess)
+
+  const geolocationOptions = {
+    enableHighAccuracy: true
+  }
+  
+  const errorCallback = (err) => {
+      console.log(err)
+      setError(err.message) // Almacena el mensaje de error en el estado
+
+  }
+
+  navigator.geolocation.getCurrentPosition(sucess, errorCallback, geolocationOptions)
 }, [])
 
  useEffect(() => {

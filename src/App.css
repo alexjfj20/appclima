@@ -6,7 +6,7 @@ article {
     padding: 20px;
     text-align: center;
     margin: 20px auto;
-    width: 60%;
+    width: 30%;
   }
   
   /* Estilo para los encabezados */
@@ -49,6 +49,8 @@ article {
   
   /* Imagen del clima */
   img {
-    max-width: 100px;
+    max-width: 60px;
     height: auto;
   }
+
+ 
